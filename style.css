@@ -1,0 +1,25 @@
+body,
+html {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.left-side {
+  background-image: url("./images/pexels-sean-patrick-1801106.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 700px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
