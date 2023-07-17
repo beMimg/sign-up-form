@@ -13,23 +13,74 @@
         <p class="title">nightadvisor</p>
       </div>
       <div class="photo-credits">
-        <p>photo by</p>
+        <p>Photo by</p>
         <a href="https://www.pexels.com/@rdne/"> RDNE Stock Project</a>
       </div>
     </div>
 
     <div class="right-side">
       <header>
-        <p>
+        <p id="header-quote">
           Your journey into the electrifying world of bars and nightclubs starts
           now. Embrace the night, unleash your desires, and let Night Advisor
           guide you to the unforgettable moments that await. Your nightlife
           revolution begins here.
         </p>
-        <p>Night Advisor: Your Ultimate Gateway to Unforgettable Nights!</p>
+        <p id="header-title">
+          Night Advisor: Your Ultimate Gateway to Unforgettable Nights!
+        </p>
       </header>
       <main>
-        <form></form>
+        <form action="" method="get" class="registration-form">
+          <div class="form-row">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="first-name"
+              id="first-name"
+              placeholder="Bob"
+            />
+          </div>
+          <div class="form-row">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              placeholder="Albury"
+            />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@example.com"
+            />
+          </div>
+          <div class="form-row">
+            <label for="phone-number">Phone Number</label>
+            <input
+              type="text"
+              name="phone-number"
+              id="phone-number"
+              placeholder="918123554"
+            />
+          </div>
+          <div class="form-row">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-row">
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm-password"
+              id="confirm-password"
+            />
+          </div>
+        </form>
       </main>
       <footer>
         <button class="create-account">Create account</button>
