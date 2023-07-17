@@ -12,14 +12,58 @@ html {
   vertical-align: baseline;
 }
 
+@font-face {
+  font-family: NightAdvisorTitle;
+  src: url("/font/arcades/Arcades.woff");
+}
+
 .left-side {
-  background-image: url("./images/pexels-sean-patrick-1801106.jpg");
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/dance.jpeg");
   background-size: cover;
+  background-position: center;
   height: 100%;
-  width: 700px;
+  width: 40%;
+  color: white;
+}
+
+.right-side {
+  width: 60%;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+  height: 150px;
+  width: 100%;
+  background: black;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: "NightAdvisorTitle", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  padding: 15px;
+}
+
+.photo-credits {
+  width: 100%;
+  margin-top: auto;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.2;
+}
+
+.photo-credits a {
+  text-decoration: none;
+  color: white;
+  margin-left: 4px;
 }
