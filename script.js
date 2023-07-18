@@ -1,8 +1,23 @@
 var errorElement = document.querySelector("#error");
+const userForm = document.querySelector("#form");
+userForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  validateForm();
+});
+
+const userPassword = document.querySelector("#password");
+userPassword.addEventListener("input", () => {
+  validateForm();
+});
+
+const userPasswordConfirmation = document.querySelector("#confirm-password");
+userPasswordConfirmation.addEventListener("input", () => {
+  validateForm();
+});
 
 function validateForm() {
-  var password1 = document.querySelector("#password").value;
-  var password2 = document.querySelector("#confirm-password").value;
+  let password1 = userPassword.value;
+  let password2 = userPasswordConfirmation.value;
 
   if (password1 !== password2) {
     errorElement.textContent = "Passwords do not match";
