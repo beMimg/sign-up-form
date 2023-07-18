@@ -8,6 +8,10 @@ function validateForm() {
     errorElement.textContent = "Passwords do not match";
     return false;
   }
-
+  if (password1.length < 8) {
+    errorElement.textContent = "Password must have at least 8 characters";
+    return false;
+  }
+  errorElement.textContent = "";
   return true;
 }

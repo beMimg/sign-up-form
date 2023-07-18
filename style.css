@@ -103,6 +103,7 @@ form {
   box-shadow: 5px 5px 18px 3px #000000;
   /* border-radius: 5px; */
   padding: 50px;
+  height: 280px;
 
   display: flex;
   flex-flow: row wrap;
@@ -125,7 +126,6 @@ form {
 }
 
 #error {
-  align-self: flex-end;
   color: red;
 }
 
