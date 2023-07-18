@@ -72,6 +72,8 @@
               id="phone-number"
               placeholder="123456789"
               pattern="[0-9]{9}"
+              oninvalid="this.setCustomValidity('Please enter a 9-digit phone number')"
+              oninput="this.setCustomValidity('')"
               required
             />
           </div>
@@ -88,6 +90,7 @@
               required
             />
           </div>
+          <div id="error"></div>
         </form>
       </main>
       <footer>

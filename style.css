@@ -124,6 +124,11 @@ form {
   margin: 0 60px 30px 0;
 }
 
+#error {
+  align-self: flex-end;
+  color: red;
+}
+
 footer button {
   padding: 20px 90px;
   border: none;
