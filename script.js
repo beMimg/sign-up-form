@@ -1,8 +1,9 @@
 var errorElement = document.querySelector("#error");
 const userForm = document.querySelector("#form");
 userForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  validateForm();
+  if (!validateForm()) {
+    event.preventDefault();
+  }
 });
 
 const userPassword = document.querySelector("#password");
