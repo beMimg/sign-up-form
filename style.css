@@ -45,10 +45,11 @@ html {
   height: 150px;
   background: black;
   background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 10%;
+  margin-top: 15%;
+
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 .title {
@@ -137,6 +138,7 @@ input:focus {
 footer {
   display: flex;
   flex-direction: column;
+  padding: 40px;
 }
 
 footer button {
@@ -149,7 +151,6 @@ footer button {
   border-radius: 10px;
   width: 350px;
   height: 100px;
-  margin-left: 65px;
 }
 
 footer button:hover {
@@ -159,7 +160,6 @@ footer button:hover {
 }
 
 footer p {
-  margin-left: 65px;
 }
 
 footer a {
@@ -216,6 +216,7 @@ footer a {
 
   form {
     padding: 20px;
+    justify-content: center;
   }
 
   input {
@@ -225,6 +226,83 @@ footer a {
   footer button {
     width: 100%;
     margin-left: 0;
+  }
+
+  footer p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1557px) {
+  /* Mobile-friendly styles for the specified screen range */
+
+  body,
+  html {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  .left-side {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .photo-credits {
+    font-size: 0.8rem;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+  }
+
+  #header-quote {
+    font-size: 1.2rem;
+  }
+
+  #header-title {
+    font-size: 1.2rem;
+  }
+
+  #form {
+    padding: 30px;
+    height: auto;
+    justify-content: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  footer button {
+    margin: 30px 0;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    align-self: center;
   }
 
   footer p {
