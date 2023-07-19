@@ -53,7 +53,7 @@ html {
 }
 
 .title {
-  font-family: "NightAdvisorTitle", sans-serif;
+  font-family: "NightAdvisorTitle", "Montserrat", Arial, sans-serif;
   color: rgb(255, 255, 255);
   font-size: 6rem;
   padding: 15px;
