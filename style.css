@@ -167,3 +167,68 @@ footer a {
   color: #cb3a1d;
   font-weight: bold;
 }
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  body,
+  html {
+    flex-direction: column;
+  }
+
+  .left-side {
+    background-image: url("./images/pexels-marlene-leppänen-12529340.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+
+  .right-side {
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    margin-top: 10%;
+    height: 60px;
+  }
+
+  .title {
+    font-size: 3rem;
+    padding: 10px;
+  }
+
+  .photo-credits {
+    opacity: 1;
+    font-size: 0.8rem;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  #header-quote {
+    font-size: 1.2rem;
+  }
+
+  #header-title {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  footer button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
