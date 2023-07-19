@@ -1,7 +1,5 @@
 body,
 html {
-  display: flex;
-  flex-direction: row;
   margin: 0;
   padding: 0;
   border: 0;
@@ -10,6 +8,9 @@ html {
   width: 100%;
   font: inherit;
   vertical-align: baseline;
+
+  display: flex;
+  flex-direction: row;
 }
 
 @font-face {
@@ -23,27 +24,30 @@ html {
   background-image: url("./images/pexels-marlene-leppänen-12529340.jpg");
   background-size: cover;
   background-position: center;
-  height: 100%;
-  width: 40%;
   color: white;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .right-side {
-  width: 60%;
   background-color: #faf4f1;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: black;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
   height: 150px;
-  width: 100%;
   background: black;
   background-color: rgba(0, 0, 0, 0.8);
-  margin-top: 10%;
+  margin-top: 15%;
+
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -56,14 +60,14 @@ html {
 }
 
 .photo-credits {
-  width: 100%;
   margin-top: auto;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  opacity: 0.2;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.2;
 }
 
 .photo-credits a {
@@ -73,12 +77,12 @@ html {
 }
 
 header {
-  height: 33%;
+  padding: 30px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px;
 }
 
 #header-quote {
@@ -91,9 +95,18 @@ header {
   font-weight: bold;
 }
 
+main {
+}
+
 form {
+  background-color: white;
+  border: 1px solid #d6d9dc;
+  -webkit-box-shadow: 5px 5px 18px 3px #000000;
+  box-shadow: 5px 5px 18px 3px #000000;
+  padding: 50px;
+
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
 }
 
 .form-row {
@@ -102,26 +115,13 @@ form {
   flex-direction: column;
 }
 
-#form {
-  background-color: white;
-  border: 1px solid #d6d9dc;
-  -webkit-box-shadow: 5px 5px 18px 3px #000000;
-  box-shadow: 5px 5px 18px 3px #000000;
-  /* border-radius: 5px; */
-  padding: 50px;
-  height: 280px;
-
-  display: flex;
-  flex-flow: row wrap;
-}
-
 input {
   background-color: #ffffff;
   border: 1px solid #d6d9dc;
   border-radius: 3px;
   width: 350px;
   padding: 7px;
-  font-size: 14px;
+  font-size: 1.1rem;
   transition: border-color 1.3s ease;
 }
 
@@ -135,17 +135,22 @@ input:focus {
   color: red;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
 footer button {
-  padding: 20px 90px;
-  border: none;
-  border-radius: 10px;
   background-color: black;
   color: #cb3a1d;
   font-size: 1.9rem;
   font-weight: bold;
   cursor: pointer;
-  margin: 60px 0 0 60px;
   border: 5px solid #cb3a1d;
+  border-radius: 10px;
+  width: 350px;
+  height: 100px;
 }
 
 footer button:hover {
@@ -155,11 +160,153 @@ footer button:hover {
 }
 
 footer p {
-  margin-left: 65px;
 }
 
 footer a {
   text-decoration: none;
   color: #cb3a1d;
   font-weight: bold;
+}
+
+/* Media query for mobile */
+@media (max-width: 768px) {
+  body,
+  html {
+    flex-direction: column;
+  }
+
+  .left-side {
+    background-image: url("./images/pexels-marlene-leppänen-12529340.jpg");
+    background-size: cover;
+    background-position: center;
+    color: black;
+  }
+
+  .right-side {
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    margin-top: 10%;
+    height: 60px;
+  }
+
+  .title {
+    font-size: 3rem;
+    padding: 10px;
+  }
+
+  .photo-credits {
+    opacity: 1;
+    font-size: 0.8rem;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  #header-quote {
+    font-size: 1.2rem;
+  }
+
+  #header-title {
+    font-size: 1.2rem;
+  }
+
+  form {
+    padding: 20px;
+    justify-content: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  footer button {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1557px) {
+  /* Mobile-friendly styles for the specified screen range */
+
+  body,
+  html {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  .left-side {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .right-side {
+    width: 100%;
+  }
+
+  .container {
+    flex-direction: column;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .photo-credits {
+    font-size: 0.8rem;
+  }
+
+  header {
+    height: auto;
+    padding: 20px;
+  }
+
+  #header-quote {
+    font-size: 1.2rem;
+  }
+
+  #header-title {
+    font-size: 1.2rem;
+  }
+
+  #form {
+    padding: 30px;
+    height: auto;
+    justify-content: center;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  footer button {
+    margin: 30px 0;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    align-self: center;
+  }
+
+  footer p {
+    margin-left: 0;
+    text-align: center;
+  }
 }
