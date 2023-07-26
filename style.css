@@ -15,7 +15,7 @@ html {
 
 @font-face {
   font-family: NightAdvisorTitle;
-  src: url("./font/Arcades.woff");
+  src: url("font/arcades.woff") format("woff");
 }
 
 .left-side {
